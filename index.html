@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <h2>this is html forms tutorial</h2>
+    <!-- we can use h2,h1,h3 or many more by having the size -->
+   <form action="backend.php">
+   <!-- by typing form we add action only which is connect to php backend   -->
+
+   <div>
+    Name: <input type=" text" name="myname"> 
+   </div>
+   <br>
+
+   <div>
+    Role: <input type=" text" role="myrole">
+   </div>
+   <!-- by using div we set content down after another -->
+    <br>
+   <div>
+    Email: <input type="text" name="myemail">
+   </div>
+    <br>
+    <div>
+        Bonus: <input type="number" name="myBonus">
+    </div>
+    <br>
+    <div>
+        date: <input type="date" name="date">
+    </div>
+    <br>
+    <div>
+        Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Others <input type="radio" name="myGender">
+    </div>
+    <br>
+    <!-- we use radio as a type when we take multiple checkbox in single content like above -->
+    <div>
+        Write about your self: <br><textarea name="myText" id="" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <!-- we use textarea as type for write somethig and deside how many colum and rows you want -->
+    <div>
+        Are you eligible?: <input type="checkbox" name="myeligibility" checked>
+    </div>
+    <br>
+    <!-- if we want checkbox then use it as a type and also if you want to checked any box by default then write "checked" after the name tag  -->
+    <div>
+        <label for="car">Car</label>
+        <select name="myCar" id="car">
+            <option value="indica">Indica</option>
+            <option value="indica">Swift</option>
+            <option value="indica">Toyota</option>
+            <option value="indica">Scuty pept</option>
+            <option value="indica">Activa 4G</option>
+        </select>
+    </div>
+    <br>
+    <div>
+     <input type="Submit" value="Submit Now">
+     OR
+     <input type="reset" value="Reset Now">
+    </div>
+   <!-- for the submit button we dont type submit firt also we type submit at the place of text and at the place of name we write value -->
+    <br>
+   <hr>
+<!-- "hr" tag for a single horizontal line  -->
+   </form>
+</body>
+
+</html>
